@@ -44,10 +44,10 @@ Complete partner apps with a verifying server, one per stack:
 
 | Template | Stack |
 | --- | --- |
-| [first-app-react](https://github.com/sabivida-mini-apps/first-app-react) | React, Vite, TypeScript, Cloudflare Worker |
-| [first-app-next](https://github.com/sabivida-mini-apps/first-app-next) | Next.js App Router, TypeScript |
-| [first-app-vue](https://github.com/sabivida-mini-apps/first-app-vue) | Vue, Vite, TypeScript, Cloudflare Worker |
-| [first-app-solid](https://github.com/sabivida-mini-apps/first-app-solid) | Solid, Vite, TypeScript, Cloudflare Worker |
+| [starter-react](https://github.com/sabivida-mini-apps/starter-react) | React, Vite, TypeScript, Cloudflare Worker |
+| [starter-next](https://github.com/sabivida-mini-apps/starter-next) | Next.js App Router, TypeScript |
+| [starter-vue](https://github.com/sabivida-mini-apps/starter-vue) | Vue, Vite, TypeScript, Cloudflare Worker |
+| [starter-solid](https://github.com/sabivida-mini-apps/starter-solid) | Solid, Vite, TypeScript, Cloudflare Worker |
 | [first-app](https://github.com/sabivida-mini-apps/first-app) | Plain JavaScript, Node or Cloudflare Worker |
 
 Each one is a template repository (**Use this template**). They all:
