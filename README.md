@@ -36,7 +36,3 @@ To apply, open an issue with the **Partner application** template and give only 
 ## Security
 
 Please report vulnerabilities privately as described in [SECURITY.md](SECURITY.md), never in a public issue.
-
-## Licence
-
-The SDK and the starter are under the [MIT licence](LICENSE). The SabiVida name and brand are not covered by the licence.

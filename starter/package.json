@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "description": "Starter partner app for SabiVida mini apps: verifies launch tokens and suggests plan steps.",
-  "license": "MIT",
   "scripts": {
     "start": "node server.mjs",
     "deploy": "node deploy.mjs"
