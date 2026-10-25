@@ -27,7 +27,7 @@ Start from a template in your stack:
 | [starter-next](https://github.com/sabivida-mini-apps/starter-next) | Next.js App Router, TypeScript |
 | [starter-vue](https://github.com/sabivida-mini-apps/starter-vue) | Vue, Vite, TypeScript, Cloudflare Worker |
 | [starter-solid](https://github.com/sabivida-mini-apps/starter-solid) | Solid, Vite, TypeScript, Cloudflare Worker |
-| [first-app](https://github.com/sabivida-mini-apps/first-app) | Plain JavaScript, Node or Cloudflare Worker |
+| [starter-js](https://github.com/sabivida-mini-apps/starter-js) | Plain JavaScript, Node or Cloudflare Worker |
 
 Each one is a template repository (**Use this template**). They all:
 - verify the launch token on your server;

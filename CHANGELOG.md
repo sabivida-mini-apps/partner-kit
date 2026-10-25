@@ -2,6 +2,7 @@
 
 ## Protocol 1
 
+- 2026-10-25: The plain JavaScript template is now starter-js, alongside starter-react, starter-next, starter-vue and starter-solid (the old first-app address redirects).
 - 2026-10-25: Templates for React, Next.js, Vue and Solid, and `npm run dev:mock`, a local stand-in for SabiVida, in every template.
 - 2026-10-25: Moved to the sabivida-mini-apps organisation as partner-kit; the starter is now the first-app template, and applications go through the registry.
 - 2026-10-25: Public developer repository published.
