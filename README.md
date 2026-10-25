@@ -1,3 +1,5 @@
+<p><img src="https://raw.githubusercontent.com/sabivida-mini-apps/.github/main/assets/social-partner-kit.png" alt="SabiVida partner kit: guide, protocol and SDK to build a SabiVida mini app." width="100%"></p>
+
 # SabiVida partner kit
 
 Build web apps that open inside [SabiVida](https://sabivida.com), the household life-admin service for Cape Verdean families at home and across the diaspora. A mini app is your existing web app: SabiVida opens it full screen, signs the member in with a short-lived token, and lets you suggest steps for the household's plans. The member confirms every step.
