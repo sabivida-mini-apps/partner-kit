@@ -1,7 +1,7 @@
 /*
  * SabiVida Mini Apps SDK, protocol 1.
  * <script src="https://sabivida.com/mini-apps/sdk/v1.js"></script>
- * Guide: https://github.com/SabiVida/mini-apps/blob/main/docs/developer-guide.md
+ * Guide: https://github.com/sabivida-mini-apps/partner-kit/blob/main/docs/developer-guide.md
  *
  * Talks only to the SabiVida page that frames this app: messages go to one
  * host origin (never '*') and replies count only from the parent window at

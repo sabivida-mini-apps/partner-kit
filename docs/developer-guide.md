@@ -2,7 +2,7 @@
 
 A SabiVida mini app is your existing web app, opened inside SabiVida for Cape Verdean members around the world. SabiVida signs the member in for you with a short-lived token and lets you suggest steps for their household plans. The message protocol, token claims and compatibility promise are in [the protocol reference](protocol.md).
 
-Partners are invited and reviewed. There is no self-service registration: see [Become a partner](../README.md#become-a-partner).
+Partners are invited and reviewed. There is no self-service registration: apply through the [partner registry](https://github.com/sabivida-mini-apps/registry#become-a-partner).
 
 ## What you get, what you never get
 
@@ -40,9 +40,9 @@ Partners are invited and reviewed. There is no self-service registration: see [B
 </script>
 ```
 
-A complete partner app with a verifying server: [`starter/`](../starter/partner.mjs). It runs on Node (`node starter/server.mjs`) or as a Cloudflare Worker (`node starter/deploy.mjs --host https://sabivida.com --app <your-app-id>`).
+A complete partner app with a verifying server: the [first-app](https://github.com/sabivida-mini-apps/first-app) template. It runs on Node (`npm start`) or as a Cloudflare Worker (`npm run deploy -- --host https://sabivida.com --app <your-app-id>`).
 
-The staging host is behind an access gate, so a partner server cannot fetch its JWKS and a partner frame cannot load its SDK. For staging, ask the SabiVida team for the staging public keys and deploy with `--jwks '<keys JSON>'`. The app then verifies against those keys and serves its own copy of the SDK. Set `data-sabivida-host` on the SDK script tag to the staging origin (the starter does this).
+The staging host is behind an access gate, so a partner server cannot fetch its JWKS and a partner frame cannot load its SDK. For staging, ask the SabiVida team for the staging public keys and deploy with `--jwks '<keys JSON>'`. The app then verifies against those keys and serves its own copy of the SDK. Set `data-sabivida-host` on the SDK script tag to the staging origin (the first-app template does this).
 
 ## Verify the launch token on your server
 
