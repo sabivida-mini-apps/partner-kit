@@ -19,7 +19,20 @@ Public keys for token verification: `https://sabivida.com/api/mini-apps/jwks.jso
 
 ## Quick start
 
-Start from the [first-app](https://github.com/sabivida-mini-apps/first-app) template (**Use this template**). It is a page plus a small server that verifies SabiVida's launch token, for Node or Cloudflare Workers.
+Start from a template in your stack:
+
+| Template | Stack |
+| --- | --- |
+| [first-app-react](https://github.com/sabivida-mini-apps/first-app-react) | React, Vite, TypeScript, Cloudflare Worker |
+| [first-app-next](https://github.com/sabivida-mini-apps/first-app-next) | Next.js App Router, TypeScript |
+| [first-app-vue](https://github.com/sabivida-mini-apps/first-app-vue) | Vue, Vite, TypeScript, Cloudflare Worker |
+| [first-app-solid](https://github.com/sabivida-mini-apps/first-app-solid) | Solid, Vite, TypeScript, Cloudflare Worker |
+| [first-app](https://github.com/sabivida-mini-apps/first-app) | Plain JavaScript, Node or Cloudflare Worker |
+
+Each one is a template repository (**Use this template**). They all:
+- verify the launch token on your server;
+- send `frame-ancestors`, so only SabiVida can frame them;
+- include `npm run dev:mock`, a local stand-in for SabiVida that frames your app, signs a test member in and answers step suggestions, so you can build before SabiVida registers your app.
 
 ## Become a partner
 

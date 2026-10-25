@@ -2,6 +2,7 @@
 
 ## Protocol 1
 
+- 2026-10-25: Templates for React, Next.js, Vue and Solid, and `npm run dev:mock`, a local stand-in for SabiVida, in every template.
 - 2026-10-25: Moved to the sabivida-mini-apps organisation as partner-kit; the starter is now the first-app template, and applications go through the registry.
 - 2026-10-25: Public developer repository published.
 - 2026-10-23: Running apps open full screen under a slim SabiVida bar on the web; the iOS and Android apps host the same pages.

@@ -40,9 +40,22 @@ Partners are invited and reviewed. There is no self-service registration: apply 
 </script>
 ```
 
-A complete partner app with a verifying server: the [first-app](https://github.com/sabivida-mini-apps/first-app) template. It runs on Node (`npm start`) or as a Cloudflare Worker (`npm run deploy -- --host https://sabivida.com --app <your-app-id>`).
+Complete partner apps with a verifying server, one per stack:
 
-The staging host is behind an access gate, so a partner server cannot fetch its JWKS and a partner frame cannot load its SDK. For staging, ask the SabiVida team for the staging public keys and deploy with `--jwks '<keys JSON>'`. The app then verifies against those keys and serves its own copy of the SDK. Set `data-sabivida-host` on the SDK script tag to the staging origin (the first-app template does this).
+| Template | Stack |
+| --- | --- |
+| [first-app-react](https://github.com/sabivida-mini-apps/first-app-react) | React, Vite, TypeScript, Cloudflare Worker |
+| [first-app-next](https://github.com/sabivida-mini-apps/first-app-next) | Next.js App Router, TypeScript |
+| [first-app-vue](https://github.com/sabivida-mini-apps/first-app-vue) | Vue, Vite, TypeScript, Cloudflare Worker |
+| [first-app-solid](https://github.com/sabivida-mini-apps/first-app-solid) | Solid, Vite, TypeScript, Cloudflare Worker |
+| [first-app](https://github.com/sabivida-mini-apps/first-app) | Plain JavaScript, Node or Cloudflare Worker |
+
+Each one is a template repository (**Use this template**). They all:
+- verify the launch token on your server;
+- send `frame-ancestors`, so only SabiVida can frame them;
+- include `npm run dev:mock`, a local stand-in for SabiVida that frames your app, signs a test member in and answers step suggestions, so you can build before SabiVida registers your app.
+
+The staging host is behind an access gate, so a partner server cannot fetch its JWKS and a partner frame cannot load its SDK. For staging, ask the SabiVida team for the staging public keys and deploy with `--jwks '<keys JSON>'`. The app then verifies against those keys and serves its own copy of the SDK. Set `data-sabivida-host` on the SDK script tag to the staging origin (the templates do this).
 
 ## Verify the launch token on your server
 
