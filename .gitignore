@@ -1,0 +1,4 @@
+node_modules/
+.wrangler/
+starter/public/sdk/
+.DS_Store
