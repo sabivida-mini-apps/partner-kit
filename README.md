@@ -12,10 +12,12 @@ It's built consent-first, for families. Each app gets a member id of its own and
 | --- | --- |
 | [`docs/developer-guide.md`](docs/developer-guide.md) | Requirements, quick start, token verification, SDK reference, deep links. Start here. |
 | [`docs/protocol.md`](docs/protocol.md) | The frame protocol, the launch token claims and the compatibility promise. |
-| [`sdk/v1.js`](sdk/v1.js) | Source of the SDK. Load it from `https://sabivida.com/mini-apps/sdk/v1.js`; this copy is for reading and offline testing. |
+| [`sdk/v1.js`](sdk/v1.js) | Source of the SDK. Load it from `https://app.sabivida.com/mini-apps/sdk/v1.js`; this copy is for reading and offline testing. |
 | [`CHANGELOG.md`](CHANGELOG.md) | Protocol and SDK changes. |
 
-Public keys for token verification: `https://sabivida.com/api/mini-apps/jwks.json`.
+Public keys for token verification: `https://app.sabivida.com/api/mini-apps/jwks.json` (the old `https://sabivida.com/api/mini-apps/jwks.json` keeps working).
+
+SabiVida is moving to `https://app.sabivida.com`: see [Moving to app.sabivida.com](docs/developer-guide.md#moving-to-appsabividacom) for what to change.
 
 ## Quick start
 
