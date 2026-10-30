@@ -5,7 +5,7 @@ Protocol version **1**. Every message carries `sabivida: 1`. Messages without it
 ## Launch
 
 1. SabiVida opens `https://<your origin><entry path>` in a sandboxed frame on the web, or in an origin-locked web view in the iOS and Android apps.
-2. Your page loads the SDK and calls `SabiVida.ready()`. The SDK posts `{ sabivida: 1, type: 'ready' }` to the SabiVida origin, never to `'*'`.
+2. Your page loads the SDK and calls `SabiVida.ready()`. The SDK posts `{ sabivida: 1, type: 'ready' }` to the SabiVida origins, never to `'*'`: by default `https://app.sabivida.com` and `https://sabivida.com`, which both frame apps (a message whose target origin is not the parent's is dropped). It then keeps to the origin that answered. `data-sabivida-host` on the script tag limits it to that one origin.
 3. SabiVida answers with `launch`, sent to your registered origin only:
 
 ```json
@@ -31,11 +31,11 @@ If SabiVida can't sign a token, it sends `{ sabivida: 1, type: 'launch_failed', 
 
 ## Launch token
 
-Header: `alg` `EdDSA`, `typ` `sabivida-launch+jwt`, and `kid` (a key in `https://sabivida.com/api/mini-apps/jwks.json`).
+Header: `alg` `EdDSA`, `typ` `sabivida-launch+jwt`, and `kid` (a key in `https://app.sabivida.com/api/mini-apps/jwks.json`, also served at `https://sabivida.com/api/mini-apps/jwks.json`).
 
 | Claim | Meaning |
 | --- | --- |
-| `iss` | `https://sabivida.com` |
+| `iss` | `https://sabivida.com`, on both hosts |
 | `aud` | Your app id |
 | `sub` | The member's id for your app only. Stable across reconnects; a new origin or publisher gives every member a new one. |
 | `iat`, `exp` | `exp` is 60 seconds after `iat` |
